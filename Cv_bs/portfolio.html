@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfólio</title>
+    <style>
+        body {
+            background-color: rgb(250, 220, 225);
+        }
+
+        .titulo {
+            color: rgb(129, 3, 87);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .seta-voltar {
+            color: rgb(129, 3, 87);
+            /* Cor da seta */
+            font-size: 2rem;
+            /* Tamanho opcional */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgb(129, 3, 87);
+            /* Cor de fundo */
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+            <a href="Curriculo_Online.html" class="navbar-brand seta-voltar">⋘</a>
+            <div class="container">
+
+                <a class="navbar-brand" href="/Curriculo_Online.html"><b>Home</b></a>
+                <a class="navbar-brand" href="/Curriculo_Online.html"><b>Sobre Mim</b></a>
+                <a class="navbar-brand" href="contato.html"><b>Contato</b></a>
+
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="background-color: rgba(120, 0, 80, 0.386); border-radius: 20px;">
+                            <b>Meu DropDown</b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/portfolio.html">Portfólio</a></li>
+                                <li><a class="dropdown-item" href="/Curriculo_Online.html">Sobre Mim</a></li>
+                                <li><a class="dropdown-item" href="/contato.html">Fale Conosco</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="projetos" class="my-5 text-center">
+
+            <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner my-5 text-center pt-5">
+                    <h3 class="titulo">Projetos em Destaque</h3>
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="Port1.PNG" class="img-fluid" style="max-width: 900px;" alt="Projeto 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="Port2.PNG" class="img-fluid" style="max-width: 1200px;" alt="Projeto 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="Port3.PNG" class="img-fluid" style="max-width: 900px;" alt="Projeto 3">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <div class="container mt-5">
+            <div class="d-grid col-3 mx-auto">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto">Ver
+                    Mais</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modalProjeto" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalhes do Projeto</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este projeto consistiu em desenvolver uma aplicação web responsiva com Bootstrap!
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
